@@ -27,6 +27,7 @@ if ($status == false) {
     exit();
 } else {
     $iine_count = $stmt->fetch();
+}
     // いいねしていれば削除，していなければ追加のSQLを作成
     if ($iine_count[0] != 0) {
         //いいねされている条件
